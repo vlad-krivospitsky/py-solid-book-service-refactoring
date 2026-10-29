@@ -19,7 +19,7 @@ class ReverseDisplayStrategy(DisplayStrategy):
 
 
 class DisplayService:
-    def __init__(self, strategy: DisplayStrategy):
+    def __init__(self, strategy: DisplayStrategy) -> None:
         self.strategy = strategy
 
     def display(self, book: Book) -> None:

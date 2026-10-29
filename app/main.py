@@ -1,7 +1,16 @@
 from app.models.book import Book
-from app.services.display_service import DisplayService, DisplayStrategyFactory
-from app.services.print_service import PrintService, PrintStrategyFactory
-from app.services.serialize_service import SerializeService, SerializeStrategyFactory
+from app.services.display_service import (
+    DisplayService,
+    DisplayStrategyFactory,
+)
+from app.services.print_service import (
+    PrintService,
+    PrintStrategyFactory,
+)
+from app.services.serialize_service import (
+    SerializeService,
+    SerializeStrategyFactory,
+)
 
 
 def main(book: Book, commands: list[tuple[str, str]]) -> None | str:

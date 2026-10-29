@@ -21,7 +21,7 @@ class ReversePrintStrategy(PrintStrategy):
 
 
 class PrintService:
-    def __init__(self, strategy: PrintStrategy):
+    def __init__(self, strategy: PrintStrategy) -> None:
         self.strategy = strategy
 
     def print_book(self, book: Book) -> None:
